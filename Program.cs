@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello world");
+            Console.WriteLine("hello from the PhoneBook app");
         }
     }
 }
