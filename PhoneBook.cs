@@ -8,7 +8,7 @@ namespace PhoneBook
 {
     internal class PhoneBook
     {
-        public List<Contact> Contacts { get; set; }
+        public List<Contact> Contacts { get; set; } = new List<Contact>();
 
         public void AddContact(Contact contact)
         {
