@@ -15,6 +15,11 @@ namespace PhoneBook
             Contacts.Add(contact);
         }
 
+        public void RemoveContactByNumber(int number)
+        {
+            Contact contact = Contacts.Find(c => c.Number == number);
+            Contacts.Remove(contact);
+        }
         private void DisplayContactsDetails(List<Contact> contacts)
         {
             foreach (var contact in contacts)
@@ -28,7 +33,7 @@ namespace PhoneBook
             Console.WriteLine($"Contact: {contact.Name}, {contact.Number}");
         }
 
-        public void DisplayContact(string number)
+        public void DisplayContact(int number)
         {
             var contact = Contacts.FirstOrDefault(c => c.Number == number);
 

@@ -8,12 +8,12 @@ namespace PhoneBook
 {
     internal class Contact
     {
-        public Contact(string name, string number)
+        public Contact(string name, int number)
         {
             Name = name;
             Number = number;
         }
         public string Name { get; set; }
-        public string Number { get; set; }
+        public int Number { get; set; }
     }
 }
